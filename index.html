@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Currency Converter</title>
+    <meta name="description" content="Txopela  Services">
+  </head>
+  <body onload="countries()">
+   
+   
+
+    
+<h1>  WELCOME TO CURRENCY CONVERTER</h1>  
+
+<select  id = "country_currency_from" onchange="country_currency_from()">
+  <option value ="null">Select Currency From</option>
+</select>
+
+<select  id = "country_currency_to" onchange="country_currency_to()">
+    <option value ="null">Select Currency To</option>  
+</select>
+
+
+<br>
+<br>
+
+<input id = "amount" type="text" placeholder="Amount">
+<br>
+<br>
+
+<button onclick="convert()">Convert</button>
+
+<p id ="converted"></p>
+
+<script src="js/app.js"></script>
+<script src="js/currency.js"></script>
+<script src="js/idb.js"></script>
+</body >
+</html>
